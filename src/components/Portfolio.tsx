@@ -7,7 +7,7 @@ const portfolioItems = [
 		id: 1,
 		title: 'Full branding designs for VoxCard',
 		category: 'Brand Identity',
-		image: 'https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=800',
+		image: './public/images/projects/voxcard.jpg',
 		description:
 			'Complete brand identity package for VoxCard including logo design, color systems, typography, and comprehensive brand guidelines.',
 		driveLink:
@@ -17,7 +17,7 @@ const portfolioItems = [
 		id: 2,
 		title: 'Full branding designs for Beautiful Discoveries',
 		category: 'Brand Identity',
-		image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800',
+		image: './public/images/projects/branding.jpg',
 		description:
 			'Comprehensive branding package for Beautiful Discoveries featuring elegant design elements and cohesive visual identity.',
 		driveLink:
@@ -27,7 +27,7 @@ const portfolioItems = [
 		id: 3,
 		title: 'Flyer designs done for church events',
 		category: 'Flyer Design',
-		image: 'https://images.pexels.com/photos/8369751/pexels-photo-8369751.jpeg?auto=compress&cs=tinysrgb&w=800',
+		image: './public/images/projects/church-flyer.jpeg',
 		description:
 			'Creative and inspiring flyer designs for various church events, services, and community gatherings.',
 		driveLink:
@@ -37,7 +37,7 @@ const portfolioItems = [
 		id: 4,
 		title: 'Social media designs done for brands',
 		category: 'Social Media',
-		image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
+		image: './public/images/projects/social-media.jpeg',
 		description:
 			'Engaging social media design systems and templates created for various brands to maintain consistency across platforms.',
 		driveLink:
