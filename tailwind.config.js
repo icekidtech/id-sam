@@ -1,34 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-        },
-        secondary: {
-          50: '#f5f3ff',
-          100: '#ede9fe',
-          200: '#ddd6fe',
-          300: '#c4b5fd',
-          400: '#a78bfa',
-          500: '#8b5cf6',
-          600: '#7c3aed',
-          700: '#6d28d9',
-          800: '#5b21b6',
-          900: '#4c1d95',
-        },
+        // Brand Colors
+        'brand-primary': '#0ea5e9', // Sky Blue
+        'brand-secondary': '#1e3a8a', // Deep Blue
+        'brand-accent': '#fbbf24', // Gold
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -37,7 +20,6 @@ export default {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.5s ease-out',
         'bounce-slow': 'bounce 2s infinite',
-        'pulse-slow': 'pulse 3s infinite',
       },
       keyframes: {
         fadeIn: {
@@ -51,16 +33,10 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'grid-pattern': `url("data:image/svg+xml,%3csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3e%3cg fill='none' fill-rule='evenodd'%3e%3cg fill='%23000000' fill-opacity='0.05'%3e%3ccircle cx='7' cy='7' r='7'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e")`,
-      },
-      spacing: {
-        '18': '4.5rem',
-        '88': '22rem',
-      },
-      backdropBlur: {
-        xs: '2px',
+        'brand-gradient': 'linear-gradient(135deg, #0ea5e9, #1e3a8a)',
+        'accent-gradient': 'linear-gradient(135deg, #fbbf24, #f59e0b)',
       },
     },
   },
   plugins: [],
-};
+}
