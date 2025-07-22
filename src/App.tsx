@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+// import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from './hooks/useTheme';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
@@ -30,30 +30,26 @@ function App() {
     return () => document.removeEventListener('click', handleSmoothScroll);
   }, []);
 
+  // Apply theme class to document root
+  useEffect(() => {
+    document.documentElement.className = theme;
+  }, [theme]);
+
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={theme}
-        className={`min-h-screen ${theme === 'dark' ? 'dark' : ''}`}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.3 }}
-      >
-        <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
-          <Header />
-          <main>
-            <Hero />
-            <About />
-            <Portfolio />
-            <Services />
-            <Experience />
-            <Contact />
-          </main>
-          <Footer />
-        </div>
-      </motion.div>
-    </AnimatePresence>
+    <div className={`min-h-screen theme-transition ${theme === 'dark' ? 'dark' : ''}`}>
+      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <Portfolio />
+          <Services />
+          <Experience />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </div>
   );
 }
 
